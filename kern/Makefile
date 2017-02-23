@@ -144,8 +144,6 @@ install: modules
 #        sudo /sbin/depmod -a ${KVER}
 #	( sudo rmmod $(addsuffix .ko,$(list-m)) >& /dev/null ) || true
 	sudo insmod $(addsuffix .ko,$(list-m))
-	sleep 1
-	sudo chmod ugo+rw /dev/mockfs
 
 uninstall:
 	sudo rm -rf $(addprefix $(KMISC),$(addsuffix .ko,$(list-m)))
