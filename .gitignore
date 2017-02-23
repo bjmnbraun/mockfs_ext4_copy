@@ -1,0 +1,6 @@
+*.o
+*.ko
+*.swp
+*perf.data
+*perf.data.old
+*.html
